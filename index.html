@@ -4,25 +4,267 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Convertor</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;1,200;1,500;1,800&family=Kdam+Thmor+Pro&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,500&family=Poppins:wght@300;400;500;600;700&family=Rampart+One&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;1,200;1,500;1,800&family=Kdam+Thmor+Pro&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,500&family=Poppins:wght@300;400;500;600;700&family=Rampart+One&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="container">
-        <label for="celsius">Celsius</label>
-        <input type="number" id="celsius" oninput="celToFar()" />
-      </div>
-      <div class="container">
-        <label for="fahrenheit">Fahrenheit</label>
-        <input type="number" id="fahrenheit" oninput="farToCel()" />
+    <div class="nav">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">A+ <span>Studio</span> </a>
+        </div>
+        <div class="navitem">
+          <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#client">Our Client</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#testimonial">Testimonial </a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+
+    <!-- HERO SECTION START -->
+
+    <section class="hero">
+      <div class="container he-ag">
+        <div class="hero-text">
+          <h1>A Digital Agency</h1>
+          <p>
+            Leading digital agency with solid design and development expertise.
+            We build readymade websites, mobile applications, and elaborate
+            online business services.
+          </p>
+          <button class="contbtn">Contact Me</button>
+        </div>
+        <div class="hero-img">
+          <img src="img/image.png" alt="hero-img" />
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+    <section class="client" id="client">
+      <div class="container client-container">
+        <h1>Our Client</h1>
+        <div class="client-n">
+          <div class="client-img">
+            <img src="img/Google Logo.png" alt="google" />
+          </div>
+          <div class="client-img">
+            <img src="img/Airbnb Logo.png" alt="airbnb" />
+          </div>
+          <div class="client-img">
+            <img src="img/Uber Eats Logo.png" alt="uber" />
+          </div>
+          <div class="client-img img-4">
+            <img src="img/Amazon Logo.png" alt="amazon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End oF HERO SECTION-->
+
+    <!-- CARD SECTION START -->
+    <section class="service" id="service">
+      <h1>Service</h1>
+      <div class="cards">
+        <!--   card 1 -->
+        <article class="card">
+          <picture class="thumbnail">
+            <img
+              class="category__01"
+              src="https://abbeyjfitzgerald.com/wp-content/uploads/2018/01/cloud.svg"
+              alt=""
+            />
+          </picture>
+          <div class="card-content">
+            <p class="category category__01">Cloud Storage</p>
+            <h2>Photo Storage</h2>
+            <p>
+              TUX re-inventing the wheel, and move the needle. Feature creep
+              dogpile that but diversify kpis but market-facing.
+            </p>
+          </div>
+        </article>
+        <!--   card 2 -->
+        <article class="card">
+          <picture class="thumbnail">
+            <img
+              class="category__02"
+              src="https://abbeyjfitzgerald.com/wp-content/uploads/2018/01/camera-1.svg"
+              alt=""
+            />
+          </picture>
+          <div class="card-content">
+            <p class="category category__02">Photo Technology</p>
+            <h2>Image Formatting</h2>
+            <p>
+              TUX re-inventing the wheel, and move the needle. Feature creep
+              dogpile that but diversify kpis but market-facing.
+            </p>
+          </div>
+        </article>
+        <!--   card 3 -->
+        <article class="card">
+          <picture class="thumbnail">
+            <img
+              class="category__03"
+              src="https://abbeyjfitzgerald.com/wp-content/uploads/2018/01/list-1.svg"
+              alt=""
+            />
+          </picture>
+          <div class="card-content">
+            <p class="category category__03">Data Management</p>
+            <h2>Document Organization</h2>
+            <p>
+              TUX re-inventing the wheel, and move the needle. Feature creep
+              dogpile that but diversify kpis but market-facing.TUX re-inventing
+              the wheel, and move the needle.
+            </p>
+          </div>
+        </article>
+        <!--   card 4 -->
+        <article class="card">
+          <picture class="thumbnail">
+            <img
+              class="category__04"
+              src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/10/browser-icon-01.svg"
+              alt=""
+            />
+          </picture>
+          <div class="card-content">
+            <p class="category category__04">Product Management</p>
+            <h2>Product Requirements</h2>
+            <p>
+              TUX re-inventing the wheel, and move the needle. Feature creep
+              dogpile that but diversify kpis but market-facing.TUX re-inventing
+              the wheel, and move the needle.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!------ Start testimonial------->
+    <section id="testimonial">
+      <h1>What our happy client say</h1>
+      <div class="container container_ses">
+        <div class="wrapper">
+          <div class="card_c">
+            <div class="card-thumb">
+              <img src="img/user.png" class="pep-img" alt="" />
+              <span class="client-name">client one</span>
+            </div>
+            <div class="card-body">
+              <p class="review">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                nam. Fugiat, ut provident. Nulla quibusdam labore ea est
+                consequatur sequi fuga iusto laudantium, earum doloremque?
+              </p>
+              <div class="rating">
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star_half.png" class="star" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card_c">
+            <div class="card-thumb">
+              <img src="img/c-1.webp" class="pep-img" alt="" />
+              <span class="client-name">client two</span>
+            </div>
+            <div class="card-body">
+              <p class="review">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                nam. Fugiat, ut provident. Nulla quibusdam labore ea est
+                consequatur sequi fuga iusto laudantium, earum doloremque?
+              </p>
+              <div class="rating">
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star_half.png" class="star" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card_c">
+            <div class="card-thumb">
+              <img src="img/c-2.jpeg" class="pep-img" alt="" />
+              <span class="client-name">client three</span>
+            </div>
+            <div class="card-body">
+              <p class="review">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                nam. Fugiat, ut provident. Nulla quibusdam labore ea est
+                consequatur sequi fuga iusto laudantium, earum doloremque?
+              </p>
+              <div class="rating">
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star.png" class="star" alt="" />
+                <img src="img/star_half.png" class="star" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+    <!------ END testimonial------->
+    <!--------   Start Contact --------->
+
+    <section id="contact">
+      <h1 class="contact_heading">Contact Me</h1>
+      <form>
+        <input
+          name="name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="feedback-input"
+          placeholder="Email"
+        />
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </section>
+    <!--------   End Contact --------->
+
+    <footer>
+      <p>Copyright © 2022<span>Sagar Lade</span></p>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </body>
 </html>

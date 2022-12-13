@@ -1,13 +1,23 @@
-let celsius = document.getElementById("celsius");
-let fahrenheit = document.getElementById("fahrenheit");
+const wrapper = document.querySelector('.wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
 
-function celToFar(){
-    let output = ( parseFloat(celsius.value) * 9/5 ) + 32;
-    fahrenheit.value = parseFloat(output.toFixed(2));
-}
+let currentTestimonial = 0; // Default 0
 
-function farToCel(){
-    let output = ( parseFloat(fahrenheit.value) - 32) * 5/9;
-    celsius.value = parseFloat( output.toFixed(2));
-    console.log(output);
-}
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+
+
+
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
